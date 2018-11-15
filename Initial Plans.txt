@@ -1,0 +1,29 @@
+HC-SR04 sensor x6
+=>
+left side
+right side
+front 
+back 
+top of arm/claw
+
+Arduino UNO R3 
+USB 2.0 A to B cable
+
+Connecting all HC-SR04 sensors in parrallel through a 5v pin on the arduino. 
+All connected through to same ground pin on arduino.
+
+mounts designed in CAD and 3D printed
+
+need to find a way to take data from each individual and send over serial in a way that is uniquely identifiable, 
+so that it can be processed correctly on the client/OCU side
+
+initial solutions to unique identification=>
+when sending over serial, send unique indentifier at start of each string, such as:
+sl, sr, sf, sb and st for sensor left, sensor right, sensor front, sensor back and sensor top respectively
+
+Arduino Uno has 13 digital pins available, therefore, there is the potential for 6 HC-SR04 sensors overall
+
+using NewPing library, should give me the abiliy to manage indidual sensors, if not then other solution 
+needs to be found
+
+should be able to use NewPing library using command => NewPing sensor1(11,12,200),where sensor1 is name of sensor, 
