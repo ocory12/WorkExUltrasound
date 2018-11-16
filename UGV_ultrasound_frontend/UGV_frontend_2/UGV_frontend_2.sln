@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UGV_frontend_2", "UGV_frontend_2\UGV_frontend_2.csproj", "{FC718603-16E7-4A46-B01D-8F67CB7710DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC718603-16E7-4A46-B01D-8F67CB7710DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC718603-16E7-4A46-B01D-8F67CB7710DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC718603-16E7-4A46-B01D-8F67CB7710DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC718603-16E7-4A46-B01D-8F67CB7710DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D69F87DC-D039-45BA-AB6D-70E0A94DC8B4}
+	EndGlobalSection
+EndGlobal

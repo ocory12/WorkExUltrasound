@@ -1,0 +1,7 @@
+C:\Users\ojcor\source\repos\UGV_frontend_2\UGV_frontend_2\obj\Debug\UGV_frontend_2.csprojAssemblyReference.cache
+C:\Users\ojcor\source\repos\UGV_frontend_2\UGV_frontend_2\obj\Debug\UGV_frontend_2.csproj.CoreCompileInputs.cache
+C:\Users\ojcor\source\repos\UGV_frontend_2\UGV_frontend_2\bin\Debug\UGV_frontend_2.exe.config
+C:\Users\ojcor\source\repos\UGV_frontend_2\UGV_frontend_2\bin\Debug\UGV_frontend_2.exe
+C:\Users\ojcor\source\repos\UGV_frontend_2\UGV_frontend_2\bin\Debug\UGV_frontend_2.pdb
+C:\Users\ojcor\source\repos\UGV_frontend_2\UGV_frontend_2\obj\Debug\UGV_frontend_2.exe
+C:\Users\ojcor\source\repos\UGV_frontend_2\UGV_frontend_2\obj\Debug\UGV_frontend_2.pdb
