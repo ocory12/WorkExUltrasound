@@ -26,14 +26,15 @@ void setup() {
 
 void loop() {
   delay(50);
-  Serial.println("sf ");  //where sf is sensor front
   Serial.print(sensFront.ping_cm());
-  Serial.println("sr ");  //where sr is sensor rear
+  Serial.print(":");  
   Serial.print(sensRear.ping_cm());
-  Serial.println("sl ");  //where sl is sensor left
+  Serial.print(":");  
   Serial.print(sensLeft.ping_cm());
-  Serial.println("sr ");  //where sr is sensor right
+  Serial.print(":");  
   Serial.print(sensRight.ping_cm());
-  Serial.println("st ");  //where st is sensor top
+  Serial.print(":");  
   Serial.print(sensTop.ping_cm());
+  Serial.println();
+  
 }
