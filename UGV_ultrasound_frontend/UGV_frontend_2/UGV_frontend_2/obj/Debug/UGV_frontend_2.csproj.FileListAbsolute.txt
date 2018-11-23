@@ -5,3 +5,10 @@ C:\Users\ojcor\source\repos\UGV_frontend_2\UGV_frontend_2\bin\Debug\UGV_frontend
 C:\Users\ojcor\source\repos\UGV_frontend_2\UGV_frontend_2\bin\Debug\UGV_frontend_2.pdb
 C:\Users\ojcor\source\repos\UGV_frontend_2\UGV_frontend_2\obj\Debug\UGV_frontend_2.exe
 C:\Users\ojcor\source\repos\UGV_frontend_2\UGV_frontend_2\obj\Debug\UGV_frontend_2.pdb
+X:\WorkExUltrasound\UGV_ultrasound_frontend\UGV_frontend_2\UGV_frontend_2\bin\Debug\UGV_frontend_2.exe.config
+X:\WorkExUltrasound\UGV_ultrasound_frontend\UGV_frontend_2\UGV_frontend_2\bin\Debug\UGV_frontend_2.exe
+X:\WorkExUltrasound\UGV_ultrasound_frontend\UGV_frontend_2\UGV_frontend_2\bin\Debug\UGV_frontend_2.pdb
+X:\WorkExUltrasound\UGV_ultrasound_frontend\UGV_frontend_2\UGV_frontend_2\obj\Debug\UGV_frontend_2.csprojAssemblyReference.cache
+X:\WorkExUltrasound\UGV_ultrasound_frontend\UGV_frontend_2\UGV_frontend_2\obj\Debug\UGV_frontend_2.csproj.CoreCompileInputs.cache
+X:\WorkExUltrasound\UGV_ultrasound_frontend\UGV_frontend_2\UGV_frontend_2\obj\Debug\UGV_frontend_2.exe
+X:\WorkExUltrasound\UGV_ultrasound_frontend\UGV_frontend_2\UGV_frontend_2\obj\Debug\UGV_frontend_2.pdb
