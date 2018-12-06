@@ -12,24 +12,28 @@ namespace UGV_frontend_GUI
 {
     public class GlobalVars
     {
-        object GlobalObject = new object();
-        public int SF;
-        public int SB;
-        public int SL;
-        public int SR;
-        public int ST;
-
+        
+        public static int SF;
+        public static int SB;
+        public static int SL;
+        public static int SR;
+        public static int ST;
+        public static bool B;
+        public static object LockObject = new object();
     }
 
     public class UGV_GUI : Form
     {
         public UGV_GUI()
         {
+            
             InitializeComponent();
         }
         void InitializeComponent()
         {
-
+            // Thread t = new Thread(UGV_Paint);
+            // t.Start();
+            // 
             Paint += new PaintEventHandler(UGV_Paint);
         }
         public void UGV_Paint(object sender, PaintEventArgs e)
@@ -57,28 +61,17 @@ namespace UGV_frontend_GUI
             int sensRight = 0;
             int sensTop = 0;
 
-            while (true)
-            {
-                lock (GlobalVars.SF)
+            
+            while(true)
+            { 
+                lock (GlobalVars.LockObject)
                 {
                     sensFront = GlobalVars.SF;
-                }
-                lock (GlobalVars.SB)
-                {
                     sensBack = GlobalVars.SB;
-                }
-                lock (GlobalVars.SL)
-                {
                     sensLeft = GlobalVars.SL;
-                }
-                lock (GlobalVars.SR)
-                {
                     sensRight = GlobalVars.SR;
-                }
-
-                lock (GlobalVars.ST)
-                {
                     sensTop = GlobalVars.ST;
+
                 }
 
 
@@ -118,8 +111,10 @@ namespace UGV_frontend_GUI
                     formGraphics.FillRectangle(clearBrush, rectRight);
                 }
 
-                Thread.Sleep(100);
-            }
+                Thread.Sleep(200);
+                
+           } 
+
 
         }
     }
@@ -134,12 +129,15 @@ namespace UGV_frontend_GUI
             ThreadStart newThread = new ThreadStart(DataCollection);
             Thread thread = new Thread(newThread);
             thread.Start();
-
-           
+       
+            /*ThreadStart DrawingThread = new ThreadStart(DrawingData);
+            Thread thread2 = new Thread(DrawingThread);
+            thread2.Start(); */
+               
             Application.Run(new UGV_GUI());
             
         }
-
+       
         public static void DataCollection()
         {
             SerialPort serialArduino = new SerialPort();
@@ -161,32 +159,30 @@ namespace UGV_frontend_GUI
                 int sr = Int32.Parse(splitData[3]);
                 int st = Int32.Parse(splitData[4]);
 
-                lock (GlobalVars.SF)
+
+                lock (GlobalVars.LockObject)
                 {
                     GlobalVars.SF = sf;
-                }
-                lock (GlobalVars.SB)
-                {
                     GlobalVars.SB = sb;
-                }
-                lock (GlobalVars.SL)
-                {
                     GlobalVars.SL = sl;
-                }
-                lock (GlobalVars.SR)
-                {
                     GlobalVars.SR = sr;
-                }
-                lock (GlobalVars.ST)
-                {
                     GlobalVars.ST = st;
+
                 }
-               
+
+                /*
+                if (sf <= 10 | sb <= 10 | sl <= 10 | sr <= 10 | st <= 10) 
+                {
+                    GlobalVars.B = true;
+                }
+                else
+                {
+                    GlobalVars.B = false;
+                }
+                */
                 Thread.Sleep(100);
 
             }
-
-
             
             
         }
